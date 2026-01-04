@@ -13,4 +13,4 @@ Resources:
       SubnetId: subnet-0123456789abcdef0
       Tags:
         - Key: Name
-          Value: MySampleInstance
+          Value: pavan
