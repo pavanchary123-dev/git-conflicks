@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Simple EC2 instance creation using CloudFormation
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0a5ac53f63249f2e9   # Amazon Linux 2 (change per region)
+      KeyName: my-keypair             # Existing EC2 key pair
+      SecurityGroupIds:
+        - sg-0123456789abcdef0        # Existing security group
+      SubnetId: subnet-0123456789abcdef0
+      Tags:
+        - Key: Name
+          Value: MySampleInstance
