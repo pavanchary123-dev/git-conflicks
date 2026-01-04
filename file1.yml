@@ -5,7 +5,7 @@ Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: t3.micro
+      InstanceType: t4.micro
       ImageId: ami-0a5ac53f63249f2e9   # Amazon Linux 2 (change per region)
       KeyName: my-keypair             # Existing EC2 key pair
       SecurityGroupIds:
